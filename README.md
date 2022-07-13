@@ -1,5 +1,5 @@
-![Asuka](https://telegra.ph/file/f975d75dabca471894485.png)
-# Asuka Robot
+![Akeno](https://te.legra.ph/file/ce84881970d9514a62fd4.jpg)
+# Akeno
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
 </h3>
@@ -27,9 +27,7 @@
 + [x] Heroku Deploy
 + [x] Docker/Local Machine
 
-╘══「 Can be found on telegram as [Asuka Robot](https://t.me/AsukaRobot) 」
-
-![Asuka](https://telegra.ph/file/8d49b6f49362e7778785e.jpg)
+╘══「 Can be found on telegram as [Akeno](https://t.me/Akeno00bot) 」
 
 ### ╒═══「 Creator Info/Credits 」
 
@@ -44,7 +42,7 @@ This repo was just reamped to suit an Anime-centric community. All original cred
 
 ### ╒═══「 Support Group 」 
 
-The Support group can be reached out to at [Asuka • Support](https://t.me/AsukaSupport), where you can ask for help about [Asuka Robot](https://t.me/AsukaRobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Akeno • Support](https://t.me/AkenoSupport0), where you can ask for help about [Akeno Support](Akeno00bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 <details>
 	<summary>Heroku Deploy</summary>
@@ -55,7 +53,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 	
   <h1>
     <p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/RimuruDemonlord/AsukaRobot">
+        <a href="https://heroku.com/deploy?template=https://github.com/Subhradeep00/Akenobot">
             <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
         </a>
     </p>
@@ -72,8 +70,8 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 </p>
 
 ```console
-    ~$ git clone https://github.com/RimuruDemonlord/AsukaRobot
-    ~$ cd AsukaRobot
+    ~$ git clone https://github.com/Subhradeep00/Akenobot 
+    ~$ cd Akenobot
     ~$ cp sample_config.py config.py
 ```
 
