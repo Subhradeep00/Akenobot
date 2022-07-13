@@ -19,7 +19,7 @@ from AsukaRobot import (
 from AsukaRobot import telethn as bot
 
 
-Credit = "Xelcius" 
+Credit = "Akatsuki" 
 
 
 @register(pattern="^/mmf ?(.*)")
