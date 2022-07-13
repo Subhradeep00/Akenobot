@@ -60,30 +60,30 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-*Hey B!tch {},*
-*Myself 𝗔𝘀𝘂𝗸𝗮 𝗟𝗮𝗻𝗴𝗹𝗲𝘆 𝗦𝗼𝗿𝘆𝘂, Pilot On Evangelion Unit-02 As Well As A Powerful Group Management Bot.*
+*Hey Darling {},*
+*Myself 𝓐𝓴𝓮𝓷𝓸 𝓗𝓲𝓶𝓮𝓳𝓲𝓶𝓪, Rias Gremory's Queen As Well As A Powerful Group Management Bot.*
 
-❍ *EVA Unit - 02*
-❍ *Uptime* - {}
-❍ *Python Version* - {}
+☆ *Rank* ~ Queen
+☆ *Uptime* ~ {}
+☆ *Python Version* ~ {}
 
 *Hit The The Help Button To Get List Of My Commands.××*
 
-*• @AsukaRobot Powered By* [𝗞𝗮𝗶𝘇𝘂𝗿𝘆𝘂](https://t.me/TheKaizuryu)
+*• @Akeno00bot Powered By* [𝔸𝕜𝕒𝕥𝕤𝕦𝕜𝕚](https://t.me/Subhradeep00)
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Add Asuka To Your Chat ➕️",
-                             url="https://t.me/AsukaRobot?startgroup=true"),
+                             text="➕️ Add Akeno To Your Chat ➕️",
+                             url="https://t.me/Akeno00bot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kaizuryu",
-                             url="https://t.me/TheKaizuryu"),
+                             text="Anime Flix",
+                             url="https://t.me/Its_Anime_Flix_India"),
                        InlineKeyboardButton(
-                             text="About Asuka",
+                             text="About Akeno",
                              callback_data="asuka_"),
                    ],
                   [
@@ -98,18 +98,18 @@ ABOUT1 = """
 """
 
 ABOUT2 = """
-*‣ Asuka Support Chats*\nJoin My Support Group/Channel For Reporting Problems And Updates On @AsukaRobot.
+*‣ Akeno Support Chats*\nJoin My Support Group/Channel For Reporting Problems And Updates On @AkenoSupport00.
 """
 
 REPO_TXT = """
 *‣ Owner:*
-• [Xelcius](t.me/xelcius)
+• [Akatsuki](t.me/Subhradeep00)
 \n*‣ Note:*
 • If You Want This Bot's Repo You Can Get It From The Button Below.
-• Report Any Kind Of Bugs At [Support](t.me/AsukaSupport)
+• Report Any Kind Of Bugs At [Support](t.me/AkenoSupport00)
 """
 
-ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
+ABOUT3 = """Hello [{}], My name is *𝓐𝓴𝓮𝓷𝓸 𝓗𝓲𝓶𝓮𝓳𝓲𝓶𝓪*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
             \n ‣ I can Restrict Users.
             \n ‣ I can Greet Users with customizable welcome message and even set a group rules
             \n ‣ I have an advanced Anti-Flood System which will help you to safe group from Spammmer.
@@ -120,7 +120,7 @@ ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Asuka* here!
+Hey [{}] *Akeno* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -133,7 +133,7 @@ For all command use / or !
 """
 
 ACRUISE = """
-💫 𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 @Anime_Cruise !!!
+💫 𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 @Anime_Flix_India !!!
 
 • 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐀𝐥𝐥 𝐋𝐚𝐭𝐞𝐬𝐭 𝐀𝐧𝐢𝐦𝐞𝐬.
 • 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 𝐀𝐧𝐢𝐦𝐞, 𝐋𝐨𝐰 𝐒𝐢𝐳𝐞.
@@ -144,33 +144,24 @@ ACRUISE = """
 """
 
 Asuka_IMG = (
-      "https://telegra.ph/file/645e0b5ca6382d6d73ab5.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
-      "https://telegra.ph/file/4e964395ea9138c943dce.jpg",
-      "https://telegra.ph/file/6e6a21dda7dd3525f7f94.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
+      "https://te.legra.ph/file/ce84881970d9514a62fd4.jpg",
 )
 
-TEXXT = "Yes B!tch, I Am Alive And Working Fine.\nCheck Out The Buttons Mentioned Below.",
+TEXXT = "Yes Darling, I Am Alive And Working Fine.\nCheck Out The Buttons Mentioned Below.",
 
 Asuka_N_IMG = (
-      "https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
-      "https://telegra.ph/file/3c93a66c6751088a00fbd.jpg",
-      "https://telegra.ph/file/3b4eed00be4dfaa189fff.jpg",
-      "https://telegra.ph/file/6cbc8452a2796ad58c2f9.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg"
-
+      "https://te.legra.ph/file/4ea17f15d61bd7df808be.jpg"
 )
 
-Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
+Asuka_PIC = "https://te.legra.ph/file/5e16d1ce34d58bca8bdde.jpg"
 
-Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
+Asuka_VID = "https://te.legra.ph/file/26b895dc8cce38d00523c.mp4"
 
-PM_PHOTO = "https://telegra.ph/file/fefd65c0e2ccb00453407.jpg"
+PM_PHOTO = "https://te.legra.ph/file/5e16d1ce34d58bca8bdde.jpg"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg"
+Asuka_DISPACHER_PIC = "https://te.legra.ph/file/d7a508059169d55277532.jpg"
 
-DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
+DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @Subhradeep00"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -304,7 +295,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
             update.effective_message.reply_photo(
-                     photo="https://telegra.ph/file/e29b543a507e0bc79e722.jpg",
+                     photo="https://te.legra.ph/file/5706b89906ba48b272ee1.jpg",
                      caption=ACRUISE,
                      parse_mode=ParseMode.HTML,
                      reply_markup=InlineKeyboardMarkup(
@@ -312,10 +303,10 @@ def start(update: Update, context: CallbackContext):
                   [
                        InlineKeyboardButton(
                              text="Join",
-                             url="t.me/Anime_Cruise"),
+                             url="t.me/Anime_Flix_India"),
                        InlineKeyboardButton(
                              text="Index",
-                             url="t.me/Cruise_Index/5")
+                             url="t.me/Anime_Flix_India")
                      ]
                 ]
             ),
@@ -325,18 +316,18 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://telegra.ph/file/c49829f9f5d65947cbc7e.mp4",
-                caption="Yes B!tch, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
+                video="https://te.legra.ph/file/9d0adbff9598076cc1844.mp4",
+                caption="Yes Darling, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Support",
-                             url="t.me/AsukaSupport"),
+                             url="t.me/AkenoSupport00"),
                        InlineKeyboardButton(
                              text="Updates",
-                             url="t.me/AsukaUpdates")
+                             url="t.me/AkenoSupport0")
                      ]
                 ]
             ),
@@ -469,8 +460,8 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/AsukaSupport"),
-                    InlineKeyboardButton(text="Updates", url="t.me/AsukaUpdates"),
+                    InlineKeyboardButton(text="Support", url="t.me/AkenoSupport00"),
+                    InlineKeyboardButton(text="Updates", url="t.me/AkenoSupport0"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="asuka_")
@@ -491,8 +482,8 @@ def repo_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/RimuruDemonlord/AsukaRobot"),
-                    InlineKeyboardButton(text="Kaizuryu", url="t.me/TheKaizuryu"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/Subhradeep00/Akenobot"),
+                    InlineKeyboardButton(text="Akatsuki", url="t.me/Subhradeep00"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="asuka_")
@@ -520,11 +511,11 @@ def asuka_callback_data(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat=""),
-                    InlineKeyboardButton(text="Developer", url="t.me/Xelcius"),
+                    InlineKeyboardButton(text="Developer", url="t.me/Subhradeep00"),
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="about_back"),
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/RimuruDemonlord/AsukaRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/Subhradeep00/Akenobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="asuka_back")
@@ -809,20 +800,20 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Evangelion Unit-02 Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Queen Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Off-Topic",
-                             url="https://t.me/Anime_Chat_XKaizuryu")
+                             url="https://t.me/Its_Anime_Flix_India")
                      ]
                 ]
             ),
         )
         except Unauthorized:
             LOGGER.warning(
-                "Asuka can't able to send message to support_chat, go and check!")
+                "Akeno can't able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
 
@@ -869,7 +860,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Finally Asuka Is Online")
+        LOGGER.info("Finally Akeno Is Online")
         allowed_updates = ['message', 'edited_message', 'callback_query', 'callback_query', 'my_chat_member',
                            'chat_member', 'chat_join_request', 'channel_post', 'edited_channel_post', 'inline_query']
         updater.start_polling(
