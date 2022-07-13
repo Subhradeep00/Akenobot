@@ -25,7 +25,7 @@ async def bot_sys_stats():
     users = sql.num_users()
     chats = sql.num_chats()
     stats = f"""
-➢ Asuka's Current System Stats
+➢ Akeno's Current System Stats
 
 ────────────────────────
 • UPTIME: {formatter.get_readable_time((bot_uptime))}
