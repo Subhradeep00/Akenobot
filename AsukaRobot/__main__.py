@@ -103,7 +103,7 @@ ABOUT2 = """
 
 REPO_TXT = """
 *‣ Owner:*
-• [Akatsuki](t.me/Subhradeep00)
+• [𝔸𝕜𝕒𝕥𝕤𝕦𝕜𝕚](t.me/Subhradeep00)
 \n*‣ Note:*
 • If You Want This Bot's Repo You Can Get It From The Button Below.
 • Report Any Kind Of Bugs At [Support](t.me/AkenoSupport00)
@@ -120,7 +120,7 @@ ABOUT3 = """Hello [{}], My name is *𝓐𝓴𝓮𝓷𝓸 𝓗𝓲𝓶𝓮𝓳�
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Akeno* here!
+Hey [{}] *𝒜𝓀ℯ𝓃ℴ* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -133,7 +133,7 @@ For all command use / or !
 """
 
 ACRUISE = """
-💫 𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 @Anime_Flix_India !!!
+💫 𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 Anime_Flix_India !!!
 
 • 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐀𝐥𝐥 𝐋𝐚𝐭𝐞𝐬𝐭 𝐀𝐧𝐢𝐦𝐞𝐬.
 • 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 𝐀𝐧𝐢𝐦𝐞, 𝐋𝐨𝐰 𝐒𝐢𝐳𝐞.
