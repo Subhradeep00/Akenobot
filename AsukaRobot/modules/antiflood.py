@@ -85,7 +85,7 @@ def check_flood(update, context) -> str:
             execstrings = "Muted for {}".format(getvalue)
             tag = "TMUTE"
         send_message(
-            update.effective_message, "Beep Boop! Boop Beep!\n{}!".format(execstrings)
+            update.effective_message, "Now Shut Up You Over Smart!!!\n{}!".format(execstrings)
         )
 
         return (
