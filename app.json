@@ -1,15 +1,15 @@
 {
-      "name": "Asuka",
+      "name": "Akeno",
       "description": "An Anime themed Telegram group management bot.",
-      "logo": "https://telegra.ph/file/ace91d9ae6af3881d3940.jpg",
+      "logo": "https://te.legra.ph/file/ce84881970d9514a62fd4.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Asuka"
+         "Akeno"
       ],   
-   "repository": "https://github.com/RimuruDemonlord/AsukaRobot",
+   "repository": "https://github.com/Subhradeep00/Akenobot",
    "addons": [
       {
          "options": {
@@ -47,7 +47,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5132611794"
+         "value": ""
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
@@ -56,7 +56,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Asuka support than consider you made an enemy.",
          "required": true,
-         "value": "AsukaSupport"
+         "value": ""
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -91,7 +91,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Asuka support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "5132611794"
+         "value": ""
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -108,7 +108,7 @@
       },
       "MONGO_DB_URI": {
          "description": "Your Mongo DB url.",
-         "required": false,
+         "required": true,
          "value": ""
       },
       "DRAGONS": {
@@ -167,7 +167,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it",
          "required": false,
-         "value": "https://t.me/xelcius"
+         "value": ""
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
