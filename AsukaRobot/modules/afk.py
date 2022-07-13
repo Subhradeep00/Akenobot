@@ -20,7 +20,7 @@ from AsukaRobot.modules.helper_funcs.readable_time import get_readable_time
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
-AFKVID = "https://telegra.ph/file/c49829f9f5d65947cbc7e.mp4"
+AFKVID = "https://te.legra.ph/file/9d0adbff9598076cc1844.mp4"
 
 
 def afk(update, context):
@@ -38,7 +38,7 @@ def afk(update, context):
     fname = update.effective_user.first_name
     try:
         update.effective_message.reply_video(
-            AFKVID,caption="Byii Byiii {}!".format(fname))
+            AFKVID,caption="Be Alive Utill Your Next Msg {}!".format(fname))
     except BadRequest:
         pass
 
