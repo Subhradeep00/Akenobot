@@ -58,30 +58,30 @@ def inlinequery(update: Update, _) -> None:
             "keyboard": ".hentai",
         },
          {
-            "title": "Anime Cruise",
-            "description": "Get Anime Channel Link",
+            "title": "ChaiSutta",
+            "description": "Get ChaiSutta Link",
             "message_text": "Click the button below to get the links.",
             "thumb_urL": "https://telegra.ph/file/941e6d601c37c3ddf2925.jpg",
-            "keyboard": ".anime",
+            "keyboard": ".Enjoy",
         },
         {
-            "title": "Asuka",
-            "description": "AsukaRobot Inline",
+            "title": "Akeno",
+            "description": "Akeno00bot Inline",
             "message_text": "Click the button below to get the Asuka Inline.",
             "thumb_urL": "https://telegra.ph/file/93b575c4c4da42d9fa4b2.jpg",
             "keyboard": ".asuka",
         },
         {
-            "title": "Kaizuryu",
-            "description": "The Kaizuryu",
-            "message_text": "Click the button below to get the Kaizuryu Network Info.",
+            "title": "Akatsuki",
+            "description": "Its_Anime_Flix_India",
+            "message_text": "Click the button below to get Anime Flix Info.",
             "thumb_urL": "https://telegra.ph/file/5daac1fcf88ca6f177ef4.jpg",
-            "keyboard": ".kaizuryu",
+            "keyboard": ".AnimeFlix",
         },
         {
-            "title": "Account info on Asuka",
-            "description": "Look up a Telegram account in Asuka database",
-            "message_text": "Click the button below to look up a person in Asuka database using their Telegram ID",
+            "title": "Account info on Akeno",
+            "description": "Look up a Telegram account in Akeno database",
+            "message_text": "Click the button below to look up a person in Akeno database using their Telegram ID",
             "thumb_urL": "https://telegra.ph/file/3c93a66c6751088a00fbd.jpg",
             "keyboard": ".info",
         },
@@ -179,10 +179,10 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThis person is my Owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part Developer of Asuka"
+        text += f"\n\nThis Person is a part Developer of Akeno"
         nation_level_present = True
     elif user.id in DRAGONS:
-        text += f"\n\nThe Nation level of this person is Royal"
+        text += f"\n\nThe Nation level of this person is Knight"
         nation_level_present = True
     elif user.id in DEMONS:
         text += f"\n\nThe Nation level of this person is Demon"
