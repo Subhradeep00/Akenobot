@@ -222,7 +222,7 @@ def hemtai(update: Update, context: CallbackContext):
 @run_async
 def animec(update: Update, context: CallbackContext):
     reply_photo = update.effective_message.reply_to_message.reply_photo if update.effective_message.reply_to_message else update.effective_message.reply_photo
-    reply_photo(photo="https://telegra.ph/file/941e6d601c37c3ddf2925.jpg", caption=f"• Anime Cruise \n\n• [Animes](https://t.me/Anime_Cruise) \n• [Index](https://t.me/Cruise_Index) \n• [Chat](https://t.me/Anime_Chat_XKaizuryu)", parse_mode=ParseMode.MARKDOWN,)
+    reply_photo(photo="https://telegra.ph/file/941e6d601c37c3ddf2925.jpg", caption=f"• ChaiSutta \n\n• [Enjoy](https://t.me/its_ChaiSutta) \n• [Index](https://t.me/Cruise_Index) \n• [Chat](https://t.me/Anime_Chat_XKaizuryu)", parse_mode=ParseMode.MARKDOWN,)
 
 normiefont = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
@@ -264,7 +264,7 @@ def weebify(update: Update, context: CallbackContext):
 
 __help__ = """
  • `/hemtai`*:* get hentai link
- • `/animec`*:* get anime cruise link
+ • `/ChaiSutta`*:* get ChaiSutta link
  • `/runs`*:* reply a random string from an array of replies
  • `/slap`*:* slap a user, or get slapped if not a reply
  • `/shrug`*:* get shrug XD
