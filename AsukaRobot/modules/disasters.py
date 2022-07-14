@@ -1,4 +1,4 @@
-#Owned By @TheKaizuryu & @Xelcius
+#Owned By @Multimeterv3 & @Subhradeep00
 
 import html
 import json
@@ -65,16 +65,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This Pro IS Already Evangelion Pilot")
+        message.reply_text("This Pro IS Already Knight")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HQ to promote a Evangelion 3.0 To Evangelion Pilot."
+        rt += "Requested HQ to promote a Demon to Knight."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote a Evangelion 2.0 to A Evangelion Pilot."
+        rt += "Requested HQ to promote a God to Demon."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -85,7 +85,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nA New Evangelion Pilot Appointed!".format(
+        rt + "\nA New Demon Appointed!".format(
             user_member.first_name))
 
     log_message = (
@@ -124,16 +124,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HQ To Demote This User From Evangelion Pilot To Evangelion 3.0"
+        rt += "Requested HQ To Demote This User From Demon To God"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a B Rank Hunter.")
+        message.reply_text("This user is already a Demon.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote this Evangelion 2.0 to Evangelion 3.0"
+        rt += "Requested HQ to promote this God to Demon"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -144,7 +144,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a B Rank Hunter!")
+        rt + f"\n{user_member.first_name} was added as a Demon!")
 
     log_message = (
         f"#SUPPORT\n"
@@ -179,17 +179,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a A Rank Hunter, Demoting to D Rank Hunter."
+        rt += "This member is a A Knight, Demoting to Demi God."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a B Rank Hunter, Demoting to D Rank Hunter."
+        rt += "This user is already a Demon, Demoting to Demi God."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a D Rank Hunter.")
+        message.reply_text("This user is already a Demi God.")
         return ""
 
     data['whitelists'].append(user_id)
@@ -200,7 +200,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a D Rank Hunter!")
+        f"\nSuccessfully promoted {user_member.first_name} to a Demi God!")
 
     log_message = (
         f"#WHITELIST\n"
@@ -235,22 +235,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Evangelion Pilot, Demoting to Evangelion 2.0."
+        rt += "This member is a Knight, Demoting to Demon."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Evangelion 3.0, Demoting to Evangelion 2.0."
+        rt += "This user is already a Demon, Demoting to a God."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Evangelion 1.0, Demoting to Evangelion 2.0."
+        rt += "This user is already a God, Demoting to Demi God."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Evangelion 2.0.")
+        message.reply_text("This user is already a Demi God.")
         return ""
 
     data['tigers'].append(user_id)
@@ -261,7 +261,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Evangelion 2.0!"
+        f"\nSuccessfully promoted {user_member.first_name} to a Demi God!"
     )
 
     log_message = (
@@ -316,7 +316,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Evangelion Pilot!")
+        message.reply_text("This user is not a Knight!")
         return ""
 
 
@@ -359,7 +359,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Evangelion 3.0!")
+        message.reply_text("This user is not a Demon!")
         return ""
 
 
@@ -401,7 +401,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Evangelion 2.0!")
+        message.reply_text("This user is not a Demi God!")
         return ""
 
 
@@ -443,7 +443,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Evangelion 2.0!")
+        message.reply_text("This user is not a Demi God!")
         return ""
 
 
@@ -524,23 +524,23 @@ def devlist(update: Update, context: CallbackContext):
             pass
     update.effective_message.reply_text(reply, parse_mode=ParseMode.HTML)
 
-SUDO_HANDLER = CommandHandler(("addsudo", "addarank"), addsudo)
-SUPPORT_HANDLER = CommandHandler(("addsupport", "addbrank"), addsupport)
-TIGER_HANDLER = CommandHandler(("addtiger" , "addcrank"), addtiger)
-WHITELIST_HANDLER = CommandHandler(("addwhitelist", "adddrank"), addwhitelist)
-UNSUDO_HANDLER = CommandHandler(("removesudo", "removearank"), removesudo)
-UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removebrank"),
+SUDO_HANDLER = CommandHandler(("addsudo", "addknight"), addsudo)
+SUPPORT_HANDLER = CommandHandler(("addsupport", "adddemon"), addsupport)
+TIGER_HANDLER = CommandHandler(("addtiger" , "addgod"), addtiger)
+WHITELIST_HANDLER = CommandHandler(("addwhitelist", "adddemigod"), addwhitelist)
+UNSUDO_HANDLER = CommandHandler(("removesudo", "removeknight"), removesudo)
+UNSUPPORT_HANDLER = CommandHandler(("removesupport", "removedemon"),
                                    removesupport)
-UNTIGER_HANDLER = CommandHandler(("removetiger" , "removecrank"), removetiger)
-UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removedrank"),
+UNTIGER_HANDLER = CommandHandler(("removetiger" , "removegod"), removetiger)
+UNWHITELIST_HANDLER = CommandHandler(("removewhitelist", "removedemigod"),
                                      removewhitelist)
 
-WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "dranks"],
+WHITELISTLIST_HANDLER = CommandHandler(["whitelistlist", "demigods"],
                                        whitelistlist)
-TIGERLIST_HANDLER = CommandHandler(["tigers" , "cranks"], tigerlist)
-SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "branks"], supportlist)
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "aranks"], sudolist)
-DEVLIST_HANDLER = CommandHandler(["devlist", "sranks"], devlist)
+TIGERLIST_HANDLER = CommandHandler(["tigers" , "gods"], tigerlist)
+SUPPORTLIST_HANDLER = CommandHandler(["supportlist", "demons"], supportlist)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "knights"], sudolist)
+DEVLIST_HANDLER = CommandHandler(["devlist", "Advisors"], devlist)
 
 dispatcher.add_handler(SUDO_HANDLER)
 dispatcher.add_handler(SUPPORT_HANDLER)
