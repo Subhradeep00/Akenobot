@@ -74,7 +74,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote a God to Demon."
+        rt += "Requested HQ to promote a God to a Demi God."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -124,7 +124,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HQ To Demote This User From Demon To God"
+        rt += "Requested HQ To Demote This User From Knight To Demon"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -133,7 +133,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote this God to Demon"
+        rt += "Requested HQ to promote this Demi God to Demon"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -240,17 +240,17 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon, Demoting to a God."
+        rt += "This user is already a Demon, Demoting to a Demi God."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a God, Demoting to Demi God."
+        rt += "This user is already a Demi God, Demoting to God."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Demi God.")
+        message.reply_text("This user is already a God.")
         return ""
 
     data['tigers'].append(user_id)
@@ -261,7 +261,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Demi God!"
+        f"\nSuccessfully promoted {user_member.first_name} to a God!"
     )
 
     log_message = (
@@ -443,7 +443,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Demi God!")
+        message.reply_text("This user is not a God!")
         return ""
 
 
@@ -482,7 +482,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Sword Demons:</b>\n"
+    reply = "<b>Elite Demons:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -498,7 +498,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Sudo K Chode:</b>\n"
+    reply = "<b>Brave Knights:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -514,7 +514,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Dev K Chode:</b>\n"
+    reply = "<b>Wise Advisors:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
