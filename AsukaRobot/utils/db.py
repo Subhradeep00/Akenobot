@@ -19,7 +19,7 @@ if "𝓐𝓴𝓮𝓷𝓸" in _RUN(_MGCLIENT.list_database_names()):
 else:
     print("𝓐𝓴𝓮𝓷𝓸 Database Not Found :( => Creating New Database...")
 
-_DATABASE: AgnosticDatabase = _MGCLIENT["𝓐𝓴𝓮𝓷𝓸"]
+_DATABASE: AgnosticDatabase = _MGCLIENT["Asuka"]
 
 
 def get_collection(name: str) -> AgnosticCollection:
