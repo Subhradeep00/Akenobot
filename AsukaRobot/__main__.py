@@ -120,7 +120,7 @@ ABOUT3 = """Hello [{}], My name is *𝓐𝓴𝓮𝓷𝓸 𝓗𝓲𝓶𝓮𝓳�
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *𝒜𝓀ℯ𝓃ℴ* here!
+Hey [{}] *𝓐𝓴𝓮𝓷𝓸* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -161,7 +161,7 @@ PM_PHOTO = "https://te.legra.ph/file/5e16d1ce34d58bca8bdde.jpg"
 
 Asuka_DISPACHER_PIC = "https://te.legra.ph/file/d7a508059169d55277532.jpg"
 
-DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @Subhradeep00"""
+DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @Its_Anime_Flix_India"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -316,7 +316,7 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://te.legra.ph/file/9d0adbff9598076cc1844.mp4",
+                video="https://te.legra.ph/file/26b895dc8cce38d00523c.mp4",
                 caption="Yes Darling, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -394,7 +394,7 @@ def help_button(update, context):
             help_buttons.append(
                 [
                     InlineKeyboardButton(text="Back", callback_data="help_back"),
-                    InlineKeyboardButton(text='Support', url='https://t.me/AsukaSupport')
+                    InlineKeyboardButton(text='Support', url='https://t.me/AkenoSupport00')
                 ]
                     )
             query.message.edit_caption(
@@ -567,7 +567,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/AsukaRobot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/Akeno00bot?start=help")
                   ]
                 ]
             ),
@@ -755,7 +755,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5132611794 and DONATION_LINK:
+        if OWNER_ID != 5546958418 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
