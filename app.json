@@ -47,7 +47,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": ""
+         "value": "5546958418"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
