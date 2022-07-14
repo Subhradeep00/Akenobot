@@ -23,7 +23,7 @@ logging.basicConfig(
               logging.StreamHandler()],
     level=logging.INFO)
 
-LOGGER = logging.getLogger("[AsukaRobot]")
+LOGGER = logging.getLogger("[Akeno]")
 
 log = logging.getLogger('[Your Bot Is Building]')
 
@@ -110,7 +110,7 @@ if ENV:
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "") # Bot Username
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "") # From:- https://openweathermap.org/api
     LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', None)
-    BOT_ID = 1412878118
+    BOT_ID = 
     ERROR_LOGS = os.environ.get("ERROR_LOGS", None) # Error Logs (Channel Ya Group Choice Is Yours) (-100)
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', True))
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
@@ -204,7 +204,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5132611794)
+DEV_USERS.add()
 
 if not SPAMWATCH_API:
     sw = None
@@ -224,8 +224,8 @@ aiohttpsession = ClientSession()
 print("Connecting ARQ Client")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Asuka", API_ID, API_HASH)
-pbot = Client("AsukaRobotpbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("𝓐𝓴𝓮𝓷𝓸", API_ID, API_HASH)
+pbot = Client("Akeno00bot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 mongo_client = MongoClient(MONGO_DB_URI)
 dispatcher = updater.dispatcher
 
