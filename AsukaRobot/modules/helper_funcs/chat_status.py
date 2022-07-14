@@ -182,7 +182,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Asuka stats is just for Dev User",
+                "𝒜𝓀ℯ𝓃ℴ stats is just for Dev User",
             )
 
     return is_sudo_plus_func
