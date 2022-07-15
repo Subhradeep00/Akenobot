@@ -63,7 +63,7 @@ PM_START_TEXT = """
 *Hey Darling {},*
 *Myself 𝓐𝓴𝓮𝓷𝓸 𝓗𝓲𝓶𝓮𝓳𝓲𝓶𝓪, Rias Gremory's Queen As Well As A Powerful Group Management Bot.*
 
-☆ *Rank* ~ Queen
+☆ *Rank* ~ 𝕼𝖚𝖊𝖊𝖓
 ☆ *Uptime* ~ {}
 ☆ *Python Version* ~ {}
 
@@ -800,7 +800,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Queen Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• 𝕼𝖚𝖊𝖊𝖓 Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
@@ -860,7 +860,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Finally Akeno Is Online")
+        LOGGER.info("Finally 𝓐𝓴𝓮𝓷𝓸 Is Online")
         allowed_updates = ['message', 'edited_message', 'callback_query', 'callback_query', 'my_chat_member',
                            'chat_member', 'chat_join_request', 'channel_post', 'edited_channel_post', 'inline_query']
         updater.start_polling(
