@@ -1,4 +1,4 @@
-#Owned By @TheKaizuryu & @Xelcius
+#Owned By @Subhradeep00 & @Multimeterv3
 
 import json
 import requests
@@ -6,11 +6,11 @@ import html
 import random
 import time
 
-from AsukaRobot import dispatcher
-from AsukaRobot.modules.disable import DisableAbleCommandHandler
+from Akenobot import dispatcher
+from Akenobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async, CallbackQueryHandler
-from AsukaRobot.modules.helper_funcs.chat_status import (is_user_admin)
-from AsukaRobot.modules.helper_funcs.extraction import extract_user
+from Akenobot.modules.helper_funcs.chat_status import (is_user_admin)
+from Akenobot.modules.helper_funcs.extraction import extract_user
 from telegram import ParseMode, Update, InlineKeyboardMarkup, InlineKeyboardButton, replymarkup, ChatPermissions
 from telegram.error import BadRequest
 
