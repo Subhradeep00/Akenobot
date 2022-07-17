@@ -1,9 +1,9 @@
-#Owned By @TheKaizuryu & @Xelcius
+#Owned By @Subhradeep00 & @Multimeterv3
 
 import threading
 
 from sqlalchemy import Column, String
-from AsukaRobot.modules.sql import BASE, SESSION
+from Akenobot.modules.sql import BASE, SESSION
 
 class KukiChats(BASE):
     __tablename__ = "kuki_chats"
