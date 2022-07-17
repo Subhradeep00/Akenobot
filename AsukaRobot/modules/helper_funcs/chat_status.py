@@ -4,7 +4,7 @@ from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
 from threading import RLock
-from AsukaRobot import (
+from Akenobot import (
     DEL_CMDS,
     DEV_USERS,
     DRAGONS,
@@ -420,7 +420,7 @@ def user_can_ban(func):
             and user not in [777000, 1087968824]
         ):
             update.effective_message.reply_text(
-                "Sorry son, but you're not worthy to wield the banhammer.",
+                "Sorry son, but this thing is not for kids.",
             )
             return ""
         return func(update, context, *args, **kwargs)
@@ -469,6 +469,6 @@ def user_can_change(func):
 
     return info_changer
 
-from AsukaRobot.modules import connection
+from Akenobot.modules import connection
 
 connected = connection.connected
