@@ -1,5 +1,5 @@
-from AsukaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from AsukaRobot import DRAGONS
+from Akenobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Akenobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -39,12 +39,12 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def Asuka_is_admin(chat_id: int):
+async def Akeno_is_admin(chat_id: int):
     status = False
-    Asuka = await telethn.get_me()
+    Akeno = await telethn.get_me()
     async for user in telethn.iter_participants(
             chat_id, filter=ChannelParticipantsAdmins):
-        if Asuka.id == user.id:
+        if Akeno.id == user.id:
             status = True
             break
     return status
