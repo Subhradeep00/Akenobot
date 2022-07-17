@@ -9,9 +9,9 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, Button, custom, version
-from AsukaRobot.events import register
-from AsukaRobot import telethn as borg, OWNER_ID, OWNER_NAME
-from AsukaRobot import StartTime, dispatcher
+from Akenobot.events import register
+from Akenobot import telethn as borg, OWNER_ID, OWNER_NAME
+from Akenobot import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 from pyrogram import __version__ as pyro
 
@@ -51,18 +51,18 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm 𝒜𝓀ℯ𝓃ℴ**\n"
-    Asuka += f"• **My Uptime** - `{uptime}`\n"
-    Asuka += f"• **Telethon Version** - `{version.__version__}`\n"
-    Asuka += f"• **PTB Version** - `{telegram.__version__}`\n"
-    Asuka += f"• **Pyrogram Version** - `{pyro}`\n"
-    Asuka += f"• **My Master** - [𝔸𝕜𝕒𝕥𝕤𝕦𝕜𝕚](tg://user?id={OWNER_ID})\n\n"
-    Asuka += f"Thanks For Adding Me In {yes.chat.title}"
+    Akeno = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm 𝒜𝓀ℯ𝓃ℴ**\n"
+    Akeno += f"• **My Uptime** - `{uptime}`\n"
+    Akeno += f"• **Telethon Version** - `{version.__version__}`\n"
+    Akeno += f"• **PTB Version** - `{telegram.__version__}`\n"
+    Akeno += f"• **Pyrogram Version** - `{pyro}`\n"
+    Akeno += f"• **My Master** - [𝔸𝕜𝕒𝕥𝕤𝕦𝕜𝕚](tg://user?id={OWNER_ID})\n\n"
+    Akeno += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/AkenoSupport00"), Button.url("Updates", "https://t.me/AkenoSupport0")]]
     on = await borg.send_file(yes.chat_id, file="https://te.legra.ph/file/ce84881970d9514a62fd4.jpg",caption=Asuka, buttons=BUTTON)
 
 @register(pattern=("/repo"))
 async def repo(yes):
-    Asuka = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
+    Akeno = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
     BUTTON = [[Button.url("GitHub", "https://github.com/Subhradeep00/Akenobot"), Button.url("Developer", "https://t.me/Subhradeep00")]]
     await borg.send_file(event.chat_id, file="https://te.legra.ph/file/ce84881970d9514a62fd4.jpg", caption=Akeno, buttons=BUTTON)
