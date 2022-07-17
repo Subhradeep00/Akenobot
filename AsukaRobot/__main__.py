@@ -11,17 +11,17 @@ from typing import List
 from typing import Optional
 from pyrogram import Client, idle, filters
 
-import AsukaRobot.modules.sql.users_sql as sql
-from AsukaRobot.modules.sudoers import bot_sys_stats as bss
+import Akenobot.modules.sql.users_sql as sql
+from Akenobot.modules.sudoers import bot_sys_stats as bss
 
-from AsukaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from Akenobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pgram, pbot)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from AsukaRobot.modules import ALL_MODULES
-from AsukaRobot.modules.helper_funcs.chat_status import is_user_admin
-from AsukaRobot.modules.helper_funcs.misc import paginate_modules
+from Akenobot.modules import ALL_MODULES
+from Akenobot.modules.helper_funcs.chat_status import is_user_admin
+from Akenobot.modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -174,7 +174,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("AsukaRobot.modules." +
+    imported_module = importlib.import_module("Akenobot.modules." +
                                               module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
@@ -446,7 +446,7 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="asuka_")
+                    InlineKeyboardButton(text="Back", callback_data="akeno_")
                  ],
                 ]
             ),
@@ -464,7 +464,7 @@ def about_callback_data(update, context):
                     InlineKeyboardButton(text="Updates", url="t.me/AkenoSupport0"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="asuka_")
+                    InlineKeyboardButton(text="Back", callback_data="akeno_")
                  ],
                 ]
             ),
@@ -486,7 +486,7 @@ def repo_callback_data(update, context):
                     InlineKeyboardButton(text="Akatsuki", url="t.me/Subhradeep00"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="asuka_")
+                    InlineKeyboardButton(text="Back", callback_data="akeno_")
                  ],
                 ]
             ),
@@ -499,11 +499,11 @@ def repo_callback_data(update, context):
         )
 
 @run_async
-def asuka_callback_data(update, context):
+def akeno_callback_data(update, context):
     query = update.callback_query
     bot = context.bot
     uptime = get_readable_time((time.time() - StartTime))
-    if query.data == "asuka_":
+    if query.data == "akeno_":
         query.message.edit_caption(
             ABOUT3.format(update.effective_user.first_name, update.effective_user.id, escape_markdown(context.bot.first_name)),
             parse_mode=ParseMode.MARKDOWN,
@@ -518,12 +518,12 @@ def asuka_callback_data(update, context):
                     InlineKeyboardButton(text="Source Code", url="https://github.com/Subhradeep00/Akenobot"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="asuka_back")
+                    InlineKeyboardButton(text="Back", callback_data="akeno_back")
                  ],
                 ]
             ),
         )
-    elif query.data == "asuka_back":
+    elif query.data == "akeno_back":
         first_name = update.effective_user.full_name
         id = update.effective_user.id
         query.message.edit_caption(
@@ -828,7 +828,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(asuka_callback_data, pattern=r"asuka_")
+    about_callback_handler = CallbackQueryHandler(asuka_callback_data, pattern=r"akeno_")
     asuka_callback_handler = CallbackQueryHandler(about_callback_data, pattern=r"about_")
     repo_callback_handler = CallbackQueryHandler(repo_callback_data, pattern=r"repo_")
     donate_handler = CommandHandler("donate", donate)
