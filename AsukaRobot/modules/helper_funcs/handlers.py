@@ -1,6 +1,6 @@
-import AsukaRobot.modules.sql.blacklistusers_sql as sql
-from AsukaRobot import ALLOW_EXCL
-from AsukaRobot import (DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES)
+import Akenobot.modules.sql.blacklistusers_sql as sql
+from Akenobot import ALLOW_EXCL
+from Akenobot import (DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES)
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
