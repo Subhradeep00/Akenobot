@@ -1,5 +1,5 @@
 from envparse import env
-from AsukaRobot import LOGGER
+from Akenobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
