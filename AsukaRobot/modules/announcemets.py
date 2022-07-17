@@ -6,10 +6,10 @@ from telegram.ext import CallbackContext
 from telegram.chatmemberupdated import ChatMemberUpdated
 from telegram.ext.chatmemberhandler import ChatMemberHandler
 
-from AsukaRobot import dispatcher
-from AsukaRobot.modules.log_channel import loggable
+from Akenobot import dispatcher
+from Akenobot.modules.log_channel import loggable
 
-import AsukaRobot.modules.sql.logger_sql as sql
+import Akenobot.modules.sql.logger_sql as sql
 
 # Module to extract and log (optional: send to chat) status changes in chat members using ChatMemberUpdated 
 # https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/chatmemberbot.py
