@@ -6,8 +6,8 @@ from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
-from AsukaRobot import DEV_USERS, DRAGONS, dispatcher
-from AsukaRobot.modules.helper_funcs.decorators import Asukacallback
+from Akenobot import DEV_USERS, DRAGONS, dispatcher
+from Akenobot.modules.helper_funcs.decorators import Asukacallback
 
 
 class AdminPerms(Enum):
@@ -61,7 +61,7 @@ def user_admin(permission: AdminPerms):
     return wrapper
 
 
-@Asukacallback(pattern="anoncb")
+@Akenocallback(pattern="anoncb")
 def anon_callback_handler1(upd: Update, _: CallbackContext):
     callback = upd.callback_query
     perm = callback.data.split('/')[3]
