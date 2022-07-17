@@ -125,7 +125,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
     
 else:
-    from AsukaRobot.config import Development as Config
+    from Akenobot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -235,7 +235,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from AsukaRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
+from Akenobot.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
                                                         CustomRegexHandler)
 
