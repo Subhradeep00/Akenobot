@@ -1,7 +1,7 @@
 import ast
 import threading
-from AsukaRobot import dispatcher
-from AsukaRobot.modules.sql import BASE, SESSION
+from Akenobot import dispatcher
+from Akenobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, Integer
 from telegram.error import BadRequest, Unauthorized
 from sqlalchemy.sql.sqltypes import BigInteger
