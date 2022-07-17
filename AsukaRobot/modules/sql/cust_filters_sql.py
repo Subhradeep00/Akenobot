@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from AsukaRobot.modules.helper_funcs.msg_types import Types
-from AsukaRobot.modules.sql import BASE, SESSION
+from Akenobot.modules.helper_funcs.msg_types import Types
+from Akenobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
