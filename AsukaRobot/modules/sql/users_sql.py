@@ -1,7 +1,7 @@
 import threading
 
-from AsukaRobot import dispatcher
-from AsukaRobot.modules.sql import BASE, SESSION
+from Akenobot import dispatcher
+from Akenobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
