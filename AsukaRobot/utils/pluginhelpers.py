@@ -13,9 +13,9 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from AsukaRobot import OWNER_ID, SUPPORT_CHAT
-from AsukaRobot.utils.errors import split_limits
-from AsukaRobot import pgram
+from Akenobot import OWNER_ID, SUPPORT_CHAT
+from Akenobot.utils.errors import split_limits
+from Akenobot import pgram
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
