@@ -31,8 +31,8 @@
 
 ### ╒═══「 Creator Info/Credits 」
 
-+  [Xelcius](https://github.com/RimuruDemonlord) : OWNER | DEV
-+  [Hodaka](https://github.com/H0daka) : BASE
++  [Akatsuki](https://github.com/Subhradeep00) : OWNER | DEV
++  [Xelcius](https://github.com/RimuruDemonlord) : BASE
 
 ╘══「 Any other authorship/credits can be seen through the commits. 」
 
