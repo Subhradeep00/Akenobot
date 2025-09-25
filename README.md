@@ -1,4 +1,4 @@
-![Akeno](https://te.legra.ph/file/ce84881970d9514a62fd4.jpg)
+![Akeno](https://telegra.ph/file/6adfcda69714d21984be1.jpg)
 # 𝓐𝓴𝓮𝓷𝓸
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
